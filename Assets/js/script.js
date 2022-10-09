@@ -20,3 +20,15 @@ function updateTime() {
 }
 
 setInterval(updateTime, 500);
+
+//5 Day Forecast Dates
+var day1 = moment(). add(1,'days').format("dddd, MMM D");
+$("#day1").text(day1);
+var day2 = moment(). add(2,'days').format("dddd, MMM D");
+$("#day2").text(day2);
+var day3 = moment(). add(3,'days').format("dddd, MMM D");
+$("#day3").text(day3);
+var day4 = moment(). add(4,'days').format("dddd, MMM D");
+$("#day4").text(day4);
+var day5 = moment(). add(5,'days').format("dddd, MMM D");
+$("#day5").text(day5);

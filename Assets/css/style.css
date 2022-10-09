@@ -1,5 +1,18 @@
 
+footer {
+    text-align: center;
+}
+
+#forecast {
+    text-align: center;
+}
 
 .jumbotron {
     text-align: center;
+    border-bottom: 3px lightslategray double;
+}
+
+#main-display {
+    border-bottom: 3px lightslategray double;
+    border-left: 3px lightslategray double;
 }

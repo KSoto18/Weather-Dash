@@ -25,16 +25,24 @@
 
             <!-- Look for city section -->
             <div class="col-md-2">
-                <select class="form-control form-control-sm">
-                    <option>Small select</option>
-                </select>
+                <form>
+                    <label>Search for a City</label>
+                    <input class="form-control my-2" id="" type="search" placeholder="Type a City">
+                    <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="searchbtn">Search</button>
+                  </form>
             </div>
 
-            <div class="col-md-8">
-                HERE GOES THE CURRENT WHEATHER STUFF
+            <div class="col-md-8" id="main-display">
+                <h1>THE CITY GOES HERE</h1>
+                <p>Temperature: </p>
+                <p>Wind: </p>
+                <p>Humidity: </p>
+                <p>UV Index: </p>
             </div>
          </div>
        </div>
+      
+        <h4 id="forecast">5 Day Forecast:</h3>
         <!-- 5-day wheater cards -->
         <div class="container m-2">
             <div class="row row-cols-4 row-cols-md-3">
@@ -44,7 +52,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="day1"></h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
                         </div>
@@ -56,7 +64,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="day2"></h5>
                             <p class="card-text">This is a short card.</p>
                         </div>
                     </div>
@@ -67,7 +75,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="day3"></h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content.</p>
                         </div>
@@ -79,7 +87,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="day4"></h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
                         </div>
@@ -91,7 +99,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title" id="day5"></h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional content. This content is a little bit longer.</p>
                         </div>
