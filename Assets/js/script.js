@@ -12,3 +12,11 @@ function getApi(queryURL) {
  }
  
  getApi(queryURL);
+
+//  Current Date and Time
+function updateTime() {
+     today = moment().format('MMMM Do YYYY, h:mm a');
+     $('#today').text(today);
+}
+
+setInterval(updateTime, 500);
