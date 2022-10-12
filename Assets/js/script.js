@@ -4,7 +4,7 @@ var APIKey = "8cca571b18ba8e81934fe345100454ba";
 var city;
 
 
-var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=orlando&appid="+ APIKey;
+var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=orlando&units=imperial&appid="+ APIKey;
     console.log(weatherAPI);
 
 // DOM
@@ -33,8 +33,11 @@ function cityHistory() {
    .then(function (response) {
      return response.json();
    })
-   .then(function (data) {
-     console.log(data);
+   .then(function (response) {
+   $(".city").text(response.name);
+   $(".temp").text("Temperature: " + response.main.temp + " °F");
+   $(".wind").text("Wind: " + response.wind.speed + " MPH");
+   $(".hum").text("Humidity: " + response.main.humidity + " %");
    }
    );
 
