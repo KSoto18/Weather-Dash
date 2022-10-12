@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Jumbotron with current date and time -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Wheather Dashboard</h1>
@@ -27,17 +28,20 @@
             <div class="col-md-2">
                 <form>
                     <label>Search for a City</label>
-                    <input class="form-control my-2" id="" type="search" placeholder="Type a City">
+                    <input id="city-input" class="form-control my-2" type="search" placeholder="Guayaquil, Ecu"> </input>
                     <button class="btn btn-outline-primary my-2" style="width: 100%" type="submit" id="searchbtn">Search</button>
                   </form>
+
+                <div id="search-history"></div>
+                
             </div>
 
             <div class="col-md-8" id="main-display">
-                <h1>THE CITY GOES HERE</h1>
-                <p>Temperature: </p>
-                <p>Wind: </p>
-                <p>Humidity: </p>
-                <p>UV Index: </p>
+                <h1 class="city"></h1>
+                <p class="temp"></p>
+                <p class="wind"></p>
+                <p class="hum"></p>
+                <p class="uv"></p>
             </div>
          </div>
        </div>

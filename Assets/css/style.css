@@ -16,3 +16,11 @@ footer {
     border-bottom: 3px lightslategray double;
     border-left: 3px lightslategray double;
 }
+
+#search-history {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 3px lightslategray double;
+    padding: 3px;
+
+}
