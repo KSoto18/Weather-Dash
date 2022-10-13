@@ -1,7 +1,7 @@
 //API KEY
 var APIKey = "8cca571b18ba8e81934fe345100454ba";
 
-var city;
+var city = [];
 var lat;
 var lon;
 
@@ -34,7 +34,7 @@ fetch(weatherAPI, {
     return response.json();
   })
   .then(function (response) {
-    $(".city").text(response.name + " (Today)");
+    $(".city").text(response.name + " Today");
     $(".temp").text("Temperature: " + response.main.temp + " °F");
     $(".wind").text("Wind: " + response.wind.speed + " MPH");
     $(".hum").text("Humidity: " + response.main.humidity + " %");
