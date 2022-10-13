@@ -34,7 +34,7 @@ fetch(weatherAPI, {
     return response.json();
   })
   .then(function (response) {
-    $(".city").text(response.name);
+    $(".city").text(response.name + " (Today)");
     $(".temp").text("Temperature: " + response.main.temp + " °F");
     $(".wind").text("Wind: " + response.wind.speed + " MPH");
     $(".hum").text("Humidity: " + response.main.humidity + " %");
@@ -93,7 +93,7 @@ fetch(weatherAPI, {
   }
 }
 
-//  Current Date and Time
+//  Current Date and Time (updates every minute)
 function updateTime() {
   today = moment().format('MMMM Do YYYY, h:mm a');
   $("#today").text(today);

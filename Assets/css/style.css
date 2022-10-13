@@ -1,26 +1,76 @@
+.body {
+    background-image: url(./blue_sky_with_white_clouds_and_sun__.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-footer {
+.footer {
     text-align: center;
+    color: white;
 }
 
 #forecast {
+    
     text-align: center;
+    color: white;
+    text-shadow: 3px 3px lightslategray;
+    border: 2px white solid;
+    background-color: #38A0EB;
+    border-radius: 5px;
+    padding: 3px;
+
 }
 
 .jumbotron {
     text-align: center;
-    border-bottom: 3px lightslategray double;
+    border-bottom: 3px white double;
+    background-color: #38A0EB;
+    color: white;
+    text-shadow: 3px 3px lightslategray;
+    padding: 10px;
 }
 
 #main-display {
-    border-bottom: 3px lightslategray double;
-    border-left: 3px lightslategray double;
+    border-bottom: 3px white double;
+    border-left: 3px white double;
+    background-color: #38A0EB;
+    color: white;
+    text-align: center;
 }
 
 #search-history {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-top: 3px lightslategray double;
-    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-top: 3px white;
+    background-color: #38A0EB;
+    border: 1px white solid;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
 
 }
+
+.search-label{
+    color: white;
+    font-weight: bold;
+}
+
+.card {
+    margin: 3px;
+    background-color: #38A0EB;
+    color: white;
+    border-color: white;
+}
+
+.container-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchbtn {
+    border-color: white;
+    background-color: #38A0EB;
+    color: white;
+}
+
