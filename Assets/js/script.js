@@ -38,6 +38,7 @@ fetch(weatherAPI, {
     $(".temp").text("Temperature: " + response.main.temp + " °F");
     $(".wind").text("Wind: " + response.wind.speed + " MPH");
     $(".hum").text("Humidity: " + response.main.humidity + " %");
+    $("#main-looks-like").html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
 
     var lat = response.coord.lat;
     console.log(lat);
