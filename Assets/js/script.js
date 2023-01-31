@@ -19,13 +19,19 @@ var cityHistory = function (event) {
   event.preventDefault();
   localStorage.setItem("City", cityInputEl.value);
   city = cityInputEl.value;
-  console.log("City: " + city)
+  city = city[0].toUpperCase() + city.substring(1);
+
+  // 1st Console Display of Search
+  console.log("City: " + city);
+  
+// APIS Calls
 
 var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
 // console.log(weatherAPI);
 
 var forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
 // console.log(forecastAPI);
+
 
 fetch(weatherAPI, {
   method: "GET",
@@ -40,10 +46,12 @@ fetch(weatherAPI, {
     $(".hum").text("Humidity: " + response.main.humidity + " %");
     $("#main-looks-like").html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
 
+    // 2nd Part of Console Display of Search
     var lat = response.coord.lat;
     console.log("Latitude: " + lat);
     var lon = response.coord.lon;
     console.log("Longitude: " + lon);
+    console.log("===============");
 
   }
   );
@@ -89,7 +97,8 @@ fetch(weatherAPI, {
 });
 
   for (var i = 0; i < localStorage.length; i++) {
-    $("#search-history").append("<ul>" + localStorage.getItem(localStorage.key(i)) + "</ul>");
+    $("#search-history").append("<ul>" + localStorage.getItem(localStorage.key("City")) + "</ul>");
+    
   }
 }
 
