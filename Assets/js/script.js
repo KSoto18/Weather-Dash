@@ -13,19 +13,19 @@ var searchHistoryEl = document.querySelector("#search-history");
 
 
 //Local Storage get and set
-var searchHistory = localStorage.getItem("City-Name");
+var searchHistory = localStorage.getItem("City");
 
 var cityHistory = function (event) {
   event.preventDefault();
-  localStorage.setItem("City-Name", cityInputEl.value);
+  localStorage.setItem("City", cityInputEl.value);
   city = cityInputEl.value;
-  console.log(city)
+  console.log("City: " + city)
 
 var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + APIKey;
-console.log(weatherAPI);
+// console.log(weatherAPI);
 
 var forecastAPI = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=" + APIKey;
-console.log(forecastAPI);
+// console.log(forecastAPI);
 
 fetch(weatherAPI, {
   method: "GET",
@@ -41,9 +41,9 @@ fetch(weatherAPI, {
     $("#main-looks-like").html("<img src='https://openweathermap.org/img/w/" + response.weather[0].icon + ".png' alt='Icon depicting current weather.'>")
 
     var lat = response.coord.lat;
-    console.log(lat);
+    console.log("Latitude: " + lat);
     var lon = response.coord.lon;
-    console.log(lon);
+    console.log("Longitude: " + lon);
 
   }
   );
@@ -89,7 +89,7 @@ fetch(weatherAPI, {
 });
 
   for (var i = 0; i < localStorage.length; i++) {
-    $("#search-history").append("<btn>" + localStorage.getItem(localStorage.key(i)) + "</btn>");
+    $("#search-history").append("<btn>" + "<li>" + localStorage.getItem(localStorage.key(i)) + "</li>" + "</btn>");
   }
 }
 
