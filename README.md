@@ -1,28 +1,6 @@
 # Weather Dashboard
 
-This is a Weather application that shows you what the weather is like when you select a city.
-
-## User Story
-
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
-
-## Acceptance Criteria
-
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+This is a Weather application that shows you what the weather is like when you input or select a city. Built with HTML & JavaScript.
 
 ## Application Demo
 
@@ -39,3 +17,9 @@ The following image shows how the web application should appear and function:
 ### Link to Repository
 
 [Repo Link](https://github.com/KSoto18/Weather-Dash)
+
+
+ ## Contact
+ For any additional questions you may contact me at: 
+ - GitHub: [KSoto18](https://github.com/KSoto18)
+ - Email: [Khris.Soto@live.com](mailto:Khris.Soto@live.com)
