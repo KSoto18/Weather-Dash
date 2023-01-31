@@ -97,7 +97,7 @@ fetch(weatherAPI, {
 });
 
   for (var i = 0; i < localStorage.length; i++) {
-    $("#search-history").append("<ul>" + localStorage.getItem(localStorage.key("City")) + "</ul>");
+    $("#search-history").append("<ul>" + localStorage.getItem(localStorage.key(i)) + "</ul>");
     
   }
 }
