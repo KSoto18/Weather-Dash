@@ -6,6 +6,8 @@ var city = [];
 var lat;
 var lon;
 
+var recentCities = [];
+
 
 // DOM Vars
 var cityInputEl = document.querySelector("#city-input");
@@ -19,9 +21,16 @@ var searchHistory = localStorage.getItem("City");
 
 var cityHistory = function (event) {
   event.preventDefault();
-  localStorage.setItem("City", cityInputEl.value);
   city = cityInputEl.value;
-  city = city[0].toUpperCase() + city.substring(1);
+  localStorage.setItem("Cities", city);
+
+  // city = city[0].toUpperCase() + city.substring(1);
+
+  recentCities = localStorage.getItem("Cities");
+
+  // recentCities.push(city);
+
+  console.log(recentCities);
 
   // 1st Console Display of Search
   console.log("City: " + city);
