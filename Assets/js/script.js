@@ -103,7 +103,7 @@ var cityHistory = function (event) {
 
   //Append City that was searched to Recent Search
   for (var i = 0; i < localStorage.length; i++) {
-    $("#search-history").append( "<li class='recentBtn'>" + localStorage.getItem(localStorage.key(i)) + "</li>");
+    $("#search-history").append( "<li class='recentBtn' id='i'>" + localStorage.getItem(localStorage.key(i)) + "</li>");
 
   }
 
@@ -113,8 +113,8 @@ var cityHistory = function (event) {
   // Click Search History Function
   var searchHistoryBtn = function (event) {
     event.preventDefault();
-    console.log('testing');
-    console.log(city);
+    recentCity = document.getElementById('i').innerText
+    console.log(recentCity);
 
   }
 
