@@ -117,18 +117,21 @@ var cityHistory = function (event) {
   }
 
   // Recent DOM Var
-  var recentBtn = document.querySelector(".recentBtn");
+  // var recentBtn = document.querySelector(".recentBtn");
 
-  // Click Search History Function
-  var searchHistoryBtn = function (event) {
-    event.preventDefault();
-    recentCity = document.getElementById('i').innerText
-    console.log(recentCity);
+  // // Click Search History Function
+  // var searchHistoryBtn = function (event) {
+  //   // event.preventDefault();
+  //   let recentCity = document.getElementById('i').innerText
+  //   console.log(recentCity);
+  //   city = recentCity;
 
-  }
+  //   cityHistory(event);
+
+  // }
 
       // Recent History Button Listener
-recentBtn.addEventListener('click', searchHistoryBtn);
+// recentBtn.addEventListener('click', searchHistoryBtn);
 
 }
 
